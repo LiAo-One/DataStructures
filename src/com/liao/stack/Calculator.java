@@ -11,7 +11,7 @@ package com.liao.stack;
 public class Calculator {
     public static void main(String[] args) {
         // 需要运算的表达式
-        String expression = "3+2*6-2+6*9";
+        String expression = "3+2*6-2";
         // 创建数栈
         ArrayStack2 numStack = new ArrayStack2(10);
         // 符号栈
