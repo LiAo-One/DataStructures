@@ -11,7 +11,7 @@ package com.liao.stack;
 public class Calculator {
     public static void main(String[] args) {
         // 需要运算的表达式
-        String expression = "3+2*6-2";
+        String expression = "720+2*6-4";
         // 创建数栈
         ArrayStack2 numStack = new ArrayStack2(10);
         // 符号栈
@@ -28,6 +28,8 @@ public class Calculator {
         int res = 0;
         // 将每次扫描得到的Char保存到ch中
         char ch = ' ';
+        // 用于拼接多位数字
+        String keepNum = "";
         // 使用while 循环扫描expression
         while (true) {
             // 依次得到expression的每一个字符 charAt(0) 获取第一个
@@ -61,8 +63,23 @@ public class Calculator {
                     operStack.push(ch);
                 }
             } else {
-                // 为数字 char 底层是ascii 0 的ascii为48 所以要减48
-                numStack.push(ch - 48);
+
+                // 将数据存入keepNum
+                keepNum += ch;
+
+                // 判断是否为最后一个
+                if (index == expression.length() - 1) {
+                    // 入数栈
+                    numStack.push(Integer.parseInt(keepNum));
+                } else {
+                    // 如果为符号 就入数栈 清空
+                    if (operStack.isOper(expression.charAt(index + 1))) {
+                        // 为符号
+                        numStack.push(Integer.parseInt(keepNum));
+                        // 清空
+                        keepNum = "";
+                    }
+                }
             }
 
             index++;
