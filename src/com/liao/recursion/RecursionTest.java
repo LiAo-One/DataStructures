@@ -14,7 +14,7 @@ public class RecursionTest {
         test(4);
 
         // 输出6
-        System.out.println(factorial(3));
+        // System.out.println(factorial(3));
     }
 
     // 打印问题
