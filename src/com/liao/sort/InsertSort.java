@@ -45,8 +45,8 @@ public class InsertSort {
             // 前一个值下标 用于和当前值比较
             int insertIndex = i - 1;
 
-            // 被比较的前一个下标值不小于零 即为大于第一  选择排序是从后往前比较值
-            // 当前值小于前一个值 需要被替换
+            // 被比较的前一个下标值不小于零 说明下标没有越界 选择排序是从当前值往前比较值
+            // 前一个值大于当前值 需要被替换
             while (insertIndex >= 0 && insertVal < arr[insertIndex]) {
                 // 把当前值设为前一个值
                 arr[insertIndex + 1] = arr[insertIndex];
@@ -56,7 +56,7 @@ public class InsertSort {
 
             // 如果当前下标加一不等于i 就说明进行了替换
             if (insertIndex + 1 != i) {
-                // 把前一个值设为 之前保存的当前值
+                // 把前一个值设为 之前保存的当前值 完成替换
                 arr[insertIndex + 1] = insertVal;
             }
         }

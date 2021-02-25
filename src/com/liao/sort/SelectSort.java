@@ -58,7 +58,7 @@ public class SelectSort {
                     value = ints[i];
                 }
             }
-            // 判断是否需要交换
+            // 判断是否需要交换 index如果还等于j 就说明没有没重置
             if (index != j) {
                 // 将当前值放到最小值的位置
                 ints[index] = ints[j];
