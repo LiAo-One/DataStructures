@@ -1,4 +1,4 @@
-package com.liao.com.liao.sort;
+package com.liao.sort;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
