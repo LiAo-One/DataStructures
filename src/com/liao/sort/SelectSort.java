@@ -51,7 +51,7 @@ public class SelectSort {
             value = ints[j];
             for (int i = j + 1; i < ints.length; i++) {
                 // 如果当前最小值大于任意一个数 就进行重置
-                if (value < ints[i]) {
+                if (value > ints[i]) {
                     // 重置最小值下标
                     index = i;
                     // 重置最小值
