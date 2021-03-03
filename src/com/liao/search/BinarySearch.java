@@ -105,7 +105,7 @@ public class BinarySearch {
             // 开始向右扫描
             temp = mid + 1;
             while (true) {
-                // 索引没有到头 当前值不符合条件
+                // 索引没有到头 当前值不符合条件 数组是有序数组 所以要查找的数就在 temp 左右
                 if (temp > arr.length - 1 || arr[temp] != findVal) {
                     break;
                 }
@@ -121,3 +121,10 @@ public class BinarySearch {
         }
     }
 }
+
+/**
+ * 设备分类查询 某个类型的设备列表
+ * 设备历史数据
+ * 视频监控的经纬度
+ * 预警数据
+ */
