@@ -44,7 +44,7 @@ class ArrBinaryTree {
             return;
         }
 
-        // 输出当前递归到的数据
+        // 输出当前递归到的数据 调整输出位置就是前序 后续 中序
         System.out.println(arr[index]);
 
         // 向左递归 (index * 2 + 1) 左子节点下标位置
@@ -56,7 +56,6 @@ class ArrBinaryTree {
         if ((index * 2 + 2) < arr.length) {
             perOrder((index * 2 + 2));
         }
-
 
     }
 }
