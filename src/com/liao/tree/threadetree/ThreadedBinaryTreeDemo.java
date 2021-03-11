@@ -62,20 +62,20 @@ class BinaryTree {
         }
     }
 
-    public void threadedList(){
-        HeroNode node  = root;
+    public void threadedList() {
+        HeroNode node = root;
 
-        while (node != null){
+        while (node != null) {
             // 循环的找到leftType==1的结点，第一个找到就是8结点
             // 后面随着遍历而变化，因为当leftType==1时，说明该结点是按照线索化
             // 处理后的有效结点
-            while (node.leftType == 0){
+            while (node.leftType == 0) {
                 node = node.left;
             }
             // 打印当前节点
             System.out.println(node.no + "===>" + node.name);
             // 如果当前节点的右指针指向的后继节点，就一直输出
-            while (node.rightType == 1){
+            while (node.rightType == 1) {
                 node = node.right;
                 System.out.println(node.no + "===>" + node.name);
             }
@@ -120,7 +120,6 @@ class BinaryTree {
 
         // 线索化右子树
         threadedNodes(node.right);
-
 
     }
 }
