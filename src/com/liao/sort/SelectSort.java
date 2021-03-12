@@ -12,6 +12,7 @@ import java.util.Date;
  * @author LiAo
  * @since 2021/2/25
  */
+@SuppressWarnings("all")
 public class SelectSort {
 
     public static void main(String[] args) {

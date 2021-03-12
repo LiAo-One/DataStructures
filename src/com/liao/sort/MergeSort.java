@@ -12,6 +12,7 @@ import java.util.Date;
  * @author LiAo
  * @since 2021/3/1
  */
+@SuppressWarnings("all")
 public class MergeSort {
     public static void main(String[] args) {
 

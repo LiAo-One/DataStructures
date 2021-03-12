@@ -12,6 +12,7 @@ import java.util.Date;
  * @author LiAo
  * @since 2021/2/26
  */
+@SuppressWarnings("all")
 public class ShellSort {
 
     public static void main(String[] args) {

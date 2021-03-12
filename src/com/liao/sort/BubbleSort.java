@@ -11,6 +11,7 @@ import java.util.Date;
  * @author LiAo
  * @since 2021/2/24
  */
+@SuppressWarnings("all")
 public class BubbleSort {
     public static void main(String[] args) {
 
