@@ -27,11 +27,11 @@ public class HeapSort {
         /*adjustHeap(arr, 0, arr.length);
         System.out.println(Arrays.toString(arr));*/
 
-        int[] arr = new int[80000];
+        int[] arr = new int[8000000];
 
-        for (int i = 0; i < 80000; i++) {
+        for (int i = 0; i < 8000000; i++) {
             // 生成一个0~80000的随机数
-            arr[i] = (int) (Math.random() * 80000);
+            arr[i] = (int) (Math.random() * 8000000);
         }
 
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
@@ -56,7 +56,7 @@ public class HeapSort {
         // 打印结束时间
         System.out.println("排序后的时间=======>" + simpleDateFormat.format(new Date()));
 
-        System.out.println(Arrays.toString(arr));
+        // System.out.println(Arrays.toString(arr));
     }
 
     /**
